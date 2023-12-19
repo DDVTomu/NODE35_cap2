@@ -88,7 +88,7 @@ const postPhong = async (req, res) => {
     } else {
       res.status(400).send({
         statusCode: 400,
-        Message: `You're not the Owner or Admin to access this comment`,
+        Message: `You're not Authorized to access this section`,
       });
       return;
     }
