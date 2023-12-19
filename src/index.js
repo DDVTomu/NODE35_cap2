@@ -8,7 +8,7 @@ import cors from 'cors';
 // mở chặn cho tất cả FE
 app.use(cors())
 
-app.listen(8080);
+// app.listen(8080);
 
 import rootRoute from './routes/rootRoutes.js';
 app.use("/api", rootRoute);
