@@ -3,8 +3,8 @@ import { checkUser, checkAdmin } from "../component/component.js";
 import sequelize from "../models/connect.js";
 import bcrypt from "bcrypt";
 import { createToken, decodeToken } from "../config/jwt.js";
-import { PrismaClient } from "@prisma/client";
-
+// import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "../generated/client/index.js";
 let prisma = new PrismaClient();
 
 let model = initModels(sequelize);

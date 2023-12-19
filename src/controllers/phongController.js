@@ -1,7 +1,8 @@
 import { decodeToken } from "../config/jwt.js";
 import sequelize from "../models/connect.js";
 import initModels from "../models/init-models.js";
-import { PrismaClient } from "@prisma/client";
+// import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "../generated/client/index.js";
 import {
   checkUser,
   checkAdmin,

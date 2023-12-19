@@ -5,7 +5,8 @@ import {
   checkPhong,
   checkBinhLuan,
 } from "../component/component.js";
-import { PrismaClient } from "@prisma/client";
+// import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "../generated/client/index.js";
 import { NUMBER } from "sequelize";
 
 let prisma = new PrismaClient();

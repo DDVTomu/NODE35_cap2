@@ -7,7 +7,8 @@ import {
   checkDateFormat,
 } from "../component/component.js";
 import { createToken, decodeToken } from "../config/jwt.js";
-import { PrismaClient } from "@prisma/client";
+// import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "../generated/client/index.js";
 
 let prisma = new PrismaClient();
 let model = initModels(sequelize);
